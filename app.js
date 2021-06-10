@@ -63,7 +63,32 @@ function getWeather() {
               .style.setProperty("--text-color", "white");
           }
         });
-    });
+    }, showError);
+  } else {
+    document.querySelector(".place").innerHTML =
+      "Location is not supported in this browser";
+  }
+}
+
+function showError(error) {
+  switch (error.code) {
+    case error.PERMISSION_DENIED:
+      document.querySelector(".place").innerHTML =
+        "User denied the request for Geolocation.";
+      break;
+    case error.POSITION_UNAVAILABLE:
+      document.querySelector(".place").innerHTML =
+        "Location information is unavailable.";
+      break;
+    case error.TIMEOUT:
+      document.querySelector(".place").innerHTML =
+        "The request to get user location timed out.";
+      break;
+    case error.UNKNOWN_ERROR:
+      document.querySelector(".place").innerHTML = "An unknown error occurred.";
+      break;
+    default:
+      document.querySelector(".place").innerHTML = "An unknown error occurred.";
   }
 }
 
