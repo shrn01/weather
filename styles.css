@@ -3,21 +3,21 @@
 * {
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
+  color: var(--text-color);
 }
 
 :root {
-  --color1: #f0f5f9;
-  --color2: #c9d6df;
-  --color3: #52616b;
-  --color4: #1e2022;
+  --bg-color: #ffffff;
+  --text-color: #000000;
 }
 
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
-  background-color: lightgreen;
+  background-color: var(--bg-color);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -47,4 +47,8 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 0.3rem;
+}
+
+.humid-icon {
+  height: 1.2em;
 }
