@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&family=Poppins:wght@100;400&display=swap");
+
+* {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+
+:root {
+  --color1: #f0f5f9;
+  --color2: #c9d6df;
+  --color3: #52616b;
+  --color4: #1e2022;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: lightgreen;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.icon {
+  margin: 0px;
+}
+
+.weather {
+  font-size: 1.3rem;
+}
+
+.place {
+  font-size: 1rem;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
